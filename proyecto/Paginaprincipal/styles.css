@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 152, 152);
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#elemento {
+    font-size: 18px;
+    color: black;
+}
+
+/* Definimos estilos adicionales para cada estilo */
+.estilo1 {
+    font-weight: bold;
+    
+}
+
+.estilo2 {
+    font-style: italic;
+}
+
+.estilo3 {
+    text-decoration: underline;
+}
+
+/* Añadimos una fuente diferente para el estilo curriculum1 */
+.curriculum1 {
+    font-family: 'Times New Roman', Times, serif; /* Cambiar al tipo de fuente deseado */
+}
+
+.curriculum2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Cambiar al tipo de fuente deseado para curriculum2 */
+}
+
+button {
+    font-size: 20px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Relleno (arriba y abajo, izquierda y derecha) */
+    margin: 5px; /* Margen exterior */
+}
+
+#linkCalculadora {
+    position: absolute;
+    top: 250px; /* Ajusta la distancia vertical según tus preferencias */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Ajuste de posición vertical para el encabezado "Mi Página con Elementos" */
+#miPagina {
+    margin-top: -1px; /* Ajusta la distancia vertical según tus preferencias */
+}
+
+/* Ajuste de posición para el enlace "Curriculum 1" */
+#linkCurriculum1 {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ajuste de posición para el enlace "Curriculum 1" */
+#linkCurriculum2 {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+

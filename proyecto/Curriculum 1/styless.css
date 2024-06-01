@@ -1,0 +1,113 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    background-color: #90ffe1;
+}
+
+#principal {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(248, 248, 249, 0.1);
+    text-align: center;
+
+    
+}
+
+h2 {
+    color: #31727b;
+    font-size: 24px;
+    
+}
+
+p {
+    color: #31727b;
+    
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #31727b;
+    
+}
+
+legend {
+    font-weight: bold;
+    border: 1px solid #31727b;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+
+table th, table td {
+    border: 1px solid #31727b;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para el formulario */
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #31727b;
+    border-radius: 51px;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"] {
+    background-color: #0052aa;
+    color: #ba0000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+   
+}
+
+input[type="submit"] {
+    background-color: #90ffe1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #31727b;
+}

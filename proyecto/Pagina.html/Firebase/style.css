@@ -1,0 +1,144 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(239, 249, 255);
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+
+.logo {
+    height: 120px;
+    margin-left: 15px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.light-blue {
+    color: white;
+    background-color: #007bff;
+}
+
+.light-blue:hover {
+    background-color: #0056b3;
+}
+
+.shadow-border {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+    background-color: red;
+    margin: 3px;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.dialog {
+    position: fixed;
+    z-index: 2;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    min-width: 50%;
+    overflow-x: hidden;
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog::backdrop {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.table {
+    margin-top: 5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.in-cols {
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%;
+}
+
+.vote-col {
+    margin: 20px;
+    flex-grow: 1;
+    background-color: azure;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+.profile-picture {
+    max-width: 80px;
+    border-radius: 50px;
+}
+
+.volver {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #002574;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+.volver:hover {
+    background-color: #4b73ec;
+    scale: 1.05;
+}

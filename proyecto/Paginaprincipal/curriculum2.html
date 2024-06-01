@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/INDEX.HTML -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>mi cv</title>
+<script type="text/javascript" src="./Mi Curriculum HTML_files/main.js.descarga" charset="UTF-8"></script></head>
+<body>
+    <link rel="stylesheet" href="stylesss.css">
+<div id="principal">
+    <h2>Pedro Amilcar Campos Sanchez</h2>
+    <p>Estudiante de la Universidad Nacional de Guatemala</p>
+<br><br><br>
+
+<fieldset>
+    <legend>Datos Generales</legend>
+    <ul>
+        <li>cedula: 3431 23454 2323 </li>
+        <li>direccion: Universiadad Nacional de Guatemala</li>
+    </ul>
+    <fieldset>
+        <legend>Habilidades y Conociminetos</legend>
+        <ul>
+            <li>Tecnico en sistemas web: HTML,C++, Javascript</li>
+            <li>Asesor: Trabajador, estudiante</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>Educacion</fieldset>
+           <table>
+              <tbody><tr>
+                 <th>Ciclo</th>
+                 <th>Entidad</th>
+                 <th>Promocion</th>
+              </tr>
+              <tr>
+                  <td>Primaria de 1ro a 6to</td>
+                  <td>Colegio Monte Alto</td>
+                  <td>2009</td>
+
+                </tr>
+                <tr>
+                    <td>Ciclo Basico</td>
+                    <td>Colegio Moria Jalapa</td>
+                    <td>2017</td>    
+                </tr>
+                <tr>
+                    <td>Bachillerato en Computacion</td>
+                    <td>Colegio El porvenir</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Universidad Ingenieria en Sistemas</td>
+                    <td>Universidad Nacional de Guatemala</td>
+                    <td>Actualidad</td>
+                </tr>
+           </tbody></table>
+           <fieldset>
+                <legend>Perfiles Sociales</legend>
+                 <ul>
+                    <li>Youtube</li>
+                    <li>Instagram</li>
+                    <li>Github</li>
+                    <li>Facebook</li>
+                    <li>Telgram</li>
+                    <li>Discord</li>
+                    <li>Twiter</li>
+                    
+                 </ul>
+           </fieldset>
+
+           <form action="http://127.0.0.1:5500/miScript.php" method="GET">
+            <label for="to">para:</label>
+            <input id="to" type="email">
+
+            <label for="subject">Asunto:</label>
+            <input id="subject" name="subject" type="text" required>
+
+
+            <label form="topic">Tematica:</label>
+            <select id="topic" name="topic">
+                <option>-- elige un tema--</option>
+                <option value="proporsal">Propuesta</option>
+
+        
+    
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar">
+                
+           </form>
+</fieldset></div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

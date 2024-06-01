@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Estilos con JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para los enlaces */
+        a {
+            color: black; /* Cambia el color del enlace */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            border: 1px solid black; /* Agrega un borde alrededor del enlace */
+            padding: 5px 10px; /* Ajusta el relleno del enlace */
+            border-radius: 3px; /* Añade esquinas redondeadas al borde */
+        }
+        /* Estilo para los botones */
+        button {
+            margin-top: 270px; /* Ajusta la distancia entre los botones y otros elementos */
+            transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+        }
+
+        button:hover {
+            background-color: rgb(51, 195, 218); /* Cambia el color de fondo cuando se pasa el mouse sobre el botón */
+        }
+
+        /* Estilo para el título "Mi Página con Elementos" */
+        #miPagina {
+            color: rgb(74, 74, 202); /* Cambia el color del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="miPagina">Mi Página con Elementos</h1>
+        <p id="elemento"></p>
+        <!-- Botón Estilo 1 -->
+        <button onclick="mostrarEnlace('Calculadora')">Estilo 1</button>
+        <!-- Enlace para Calculadora -->
+        <a id="linkCalculadora" href="calculadora.html" style="display:none; font-size: 24px;">Calculadora</a>
+        <!-- Botón Estilo 2 -->
+        <button onclick="mostrarEnlace('Curriculum1')">Estilo 2</button>
+        <!-- Enlace para Curriculum 1 -->
+        <a id="linkCurriculum1" href="curriculum1.html" style="display:none; margin-bottom: 20px; font-size: 24px;">Curriculum 1</a>
+        <!-- Botón Estilo 3 -->
+        <button onclick="mostrarEnlace('Curriculum2')">Estilo 3</button>
+        <!-- Enlace para Curriculum 2 -->
+        <a id="linkCurriculum2" href="curriculum2.html" style="display:none; margin-bottom: 20px; font-size: 24px;">Curriculum 2</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

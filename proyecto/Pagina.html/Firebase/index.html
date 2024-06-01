@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaciones UMG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="../index.html" class="volver">Volver</a>
+
+    <div class="row">
+        <h1>Votaciones UMG</h1>
+        <img class="logo" src="https://umgef.wordpress.com/wp-content/uploads/2017/10/5619171_orig.png" alt="">
+    </div>
+    <div class="row margin-top">
+        <div class="shadow-border">
+            <button class="button light-blue" id="btnAbrirVentanaCrear">Crear votaciones</button>
+        </div>
+        <div class="shadow-border">
+            <button class="button light-blue" id="btnVerVotaciones">Ver votaciones activas</button>
+        </div>
+    </div>
+    <dialog id="dialogCrearVotacion" class="dialog">
+        <div class="modal-title">
+            <label>Crear votación</label>
+        </div>
+            <form class="form-items">
+                <div class="row">
+                    <label for="txtNombre">Nombre</label>
+                    <input id="txtNombre" type="text" class="form-control">
+                </div>
+                <div class="row">
+                    <label for="txtOpcion1">Opción 1</label>
+                    <input id="txtOpcion1" class="form-control">
+                </div>
+                <div class="row">
+                    <label for="txtOpcion2">Opción 2</label>
+                    <input id="txtOpcion2" class="form-control">
+                </div>
+                    <button id="btnCrearVotacion" class="button light-blue">Crear</button>
+            </form>
+    </dialog>
+    <dialog id="dialogIniciarSesion" class="dialog">
+
+        <a href="../index.html" class="volver">Volver</a>
+
+        <div class="dialog-content">
+            <small>Debe iniciar sesión para interactuar con la aplicación</small>
+            <button class="button light-blue" id="btnIniciarSesion">Iniciar Sesión con Google</button>
+        </div>
+    </dialog>
+    <dialog id="dialogVotaciones" class="dialog">
+        <div class="modal-title">
+            <label>Votaciones activas</label>
+        </div>
+        <div class="dialog-content">
+            <table class="table" border="1" id="table-votaciones">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                         <th>Opción 1</th>
+                        <th>Opción 2</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </dialog>
+    <script src="firebase-connect.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+    
+</body>
+</html>
